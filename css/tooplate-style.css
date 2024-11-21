@@ -226,7 +226,7 @@ a:hover, a:active, a:focus {
 #home {
   background: url('../images/saathvik-bg.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
-  background-position: center -50px;
+  background-position: center -200px;
   display: -webkit-box;
   display: -webkit-flex;
    display: -ms-flexbox;
