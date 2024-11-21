@@ -224,9 +224,9 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/saathvik-bg.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center -50px;
   display: -webkit-box;
   display: -webkit-flex;
    display: -ms-flexbox;
