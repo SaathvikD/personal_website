@@ -157,6 +157,14 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
+/* Titles and timelines placed straight inside a .row (no column) would
+   otherwise inherit its -15px gutter and touch the screen edge. */
+.row > .section-title,
+.row > .timeline {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 #service, #about, #work,
 #contact, footer {
   position: relative;
