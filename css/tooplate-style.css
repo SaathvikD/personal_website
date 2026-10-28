@@ -224,9 +224,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/saathvik-bg.jpg') 50% 0 repeat-y fixed;
-  /*background: url('../images/saathvik-bg.jpg') no-repeat fixed center -600px;*/
-  background-size: cover;
+  background: url('../images/saathvik-bg.jpg') no-repeat fixed;
   background-size: cover;
   background-position: center bottom;
   display: -webkit-box;
@@ -669,8 +667,25 @@ footer p {
 -----------------------------------------*/
 
 @media (max-width: 980px) {
+  /* Fixed backgrounds are unsupported on iOS/Android and blow the photo up
+     to the full page height, so scroll it with the section instead. */
+  #home,
+  .parallax-section {
+    background-attachment: scroll !important;
+  }
+
   #home {
-    height: 55vh;
+    background-image: url('../images/saathvik-bg-mobile.jpg');
+    background-position: 53% 70%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 480px;
+    align-items: flex-start;
+    padding-top: 110px;
+  }
+
+  #home .home-thumb {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
   }
 
   .service-thumb {
@@ -684,14 +699,14 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
-  #home {
-    height: 85vh;
-  }
-}
-
-
 @media (max-width: 580px) {
+  #home {
+    padding-top: 90px;
+  }
+
+  #home .home-thumb {
+    text-align: center;
+  }
 
   h1 {
     font-size: 29px;
@@ -701,19 +716,19 @@ footer p {
     font-size: 23px;
   }
 
-  #home {
-    height: 95vh;
-  }
-
   .contact-info {
     margin-top: 42px;
   }
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 580px) and (max-height: 700px) {
   #home {
-    height: 125vh;
+    padding-top: 70px;
+  }
+
+  #home .section-btn {
+    margin-top: 16px;
   }
 }
 

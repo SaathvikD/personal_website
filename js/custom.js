@@ -16,7 +16,6 @@
 
         // Parallax Js
         function initParallax() {
-          $('#home').parallax("50%", 50);
           $('#service').parallax("50%", 40);
           $('#about').parallax("50%", 20);
           $('#work').parallax("50%", 30);
